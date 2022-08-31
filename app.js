@@ -10,13 +10,13 @@ const PORT = process.env.PORT || 3001;
 app.use("/",express.static("public"));
 
 // サーバの生成
-var server = http.createServer(app);
+const server = http.createServer(app);
 
 // 設定オブジェクトの生成 - 他のオプションについてはデフォルトの 'settings.js' ファイルを参照してください
-var settings = {
+const settings = {
     httpAdminRoot:"/red",
     httpNodeRoot: "/api",
-    userDir:"/home/nol/.nodered/",
+    userDir:"$HOME/.nodered/",
     functionGlobalContext: { }    // グローバルコンテキストを有効化
 };
 
@@ -33,3 +33,5 @@ server.listen(PORT);
 
 // ランタイム起動
 RED.start();
+
+console.log(`starging... ${PORT}`)
