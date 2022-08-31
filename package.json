@@ -1,0 +1,24 @@
+{
+  "name": "red-render",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-red",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0bisuke/node-red-render.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n0bisuke/node-red-render/issues"
+  },
+  "homepage": "https://github.com/n0bisuke/node-red-render#readme",
+  "dependencies": {
+    "node-red": "^3.0.2"
+  }
+}
